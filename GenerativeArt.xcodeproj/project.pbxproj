@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		49E06F0C2AE81A8C0029E2F4 /* GenerativeArtApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E06F0B2AE81A8C0029E2F4 /* GenerativeArtApp.swift */; };
-		49E06F0E2AE81A8C0029E2F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E06F0D2AE81A8C0029E2F4 /* ContentView.swift */; };
 		49E06F102AE81A8E0029E2F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E06F0F2AE81A8E0029E2F4 /* Assets.xcassets */; };
 		49E06F132AE81A8E0029E2F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E06F122AE81A8E0029E2F4 /* Preview Assets.xcassets */; };
+		49E06F1B2AE81D300029E2F4 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E06F1A2AE81D300029E2F4 /* TileView.swift */; };
+		49E06F1D2AE81D690029E2F4 /* MosaicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E06F1C2AE81D680029E2F4 /* MosaicView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		49E06F082AE81A8C0029E2F4 /* GenerativeArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenerativeArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E06F0B2AE81A8C0029E2F4 /* GenerativeArtApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerativeArtApp.swift; sourceTree = "<group>"; };
-		49E06F0D2AE81A8C0029E2F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		49E06F0F2AE81A8E0029E2F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49E06F122AE81A8E0029E2F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		49E06F1A2AE81D300029E2F4 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
+		49E06F1C2AE81D680029E2F4 /* MosaicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				49E06F0B2AE81A8C0029E2F4 /* GenerativeArtApp.swift */,
-				49E06F0D2AE81A8C0029E2F4 /* ContentView.swift */,
+				49E06F192AE81CEA0029E2F4 /* Views */,
 				49E06F0F2AE81A8E0029E2F4 /* Assets.xcassets */,
 				49E06F112AE81A8E0029E2F4 /* Preview Content */,
 			);
@@ -65,6 +67,15 @@
 				49E06F122AE81A8E0029E2F4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		49E06F192AE81CEA0029E2F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49E06F1A2AE81D300029E2F4 /* TileView.swift */,
+				49E06F1C2AE81D680029E2F4 /* MosaicView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49E06F0E2AE81A8C0029E2F4 /* ContentView.swift in Sources */,
+				49E06F1B2AE81D300029E2F4 /* TileView.swift in Sources */,
+				49E06F1D2AE81D690029E2F4 /* MosaicView.swift in Sources */,
 				49E06F0C2AE81A8C0029E2F4 /* GenerativeArtApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
