@@ -12,6 +12,7 @@
 		49E06F132AE81A8E0029E2F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E06F122AE81A8E0029E2F4 /* Preview Assets.xcassets */; };
 		49E06F1B2AE81D300029E2F4 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E06F1A2AE81D300029E2F4 /* TileView.swift */; };
 		49E06F1D2AE81D690029E2F4 /* MosaicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E06F1C2AE81D680029E2F4 /* MosaicView.swift */; };
+		49E06F202AE826330029E2F4 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E06F1F2AE826330029E2F4 /* Shape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		49E06F122AE81A8E0029E2F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		49E06F1A2AE81D300029E2F4 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 		49E06F1C2AE81D680029E2F4 /* MosaicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicView.swift; sourceTree = "<group>"; };
+		49E06F1F2AE826330029E2F4 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		49E06F0A2AE81A8C0029E2F4 /* GenerativeArt */ = {
 			isa = PBXGroup;
 			children = (
+				49E06F1E2AE825EA0029E2F4 /* Helpers */,
 				49E06F0B2AE81A8C0029E2F4 /* GenerativeArtApp.swift */,
 				49E06F192AE81CEA0029E2F4 /* Views */,
 				49E06F0F2AE81A8E0029E2F4 /* Assets.xcassets */,
@@ -76,6 +79,14 @@
 				49E06F1C2AE81D680029E2F4 /* MosaicView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		49E06F1E2AE825EA0029E2F4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				49E06F1F2AE826330029E2F4 /* Shape.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +162,7 @@
 				49E06F1B2AE81D300029E2F4 /* TileView.swift in Sources */,
 				49E06F1D2AE81D690029E2F4 /* MosaicView.swift in Sources */,
 				49E06F0C2AE81A8C0029E2F4 /* GenerativeArtApp.swift in Sources */,
+				49E06F202AE826330029E2F4 /* Shape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
