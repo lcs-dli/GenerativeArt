@@ -13,6 +13,7 @@
 		49E06F1B2AE81D300029E2F4 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E06F1A2AE81D300029E2F4 /* TileView.swift */; };
 		49E06F1D2AE81D690029E2F4 /* MosaicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E06F1C2AE81D680029E2F4 /* MosaicView.swift */; };
 		49E06F202AE826330029E2F4 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E06F1F2AE826330029E2F4 /* Shape.swift */; };
+		49E06F222AE828D80029E2F4 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E06F212AE828D80029E2F4 /* Coin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		49E06F1A2AE81D300029E2F4 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 		49E06F1C2AE81D680029E2F4 /* MosaicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicView.swift; sourceTree = "<group>"; };
 		49E06F1F2AE826330029E2F4 /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
+		49E06F212AE828D80029E2F4 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				49E06F1F2AE826330029E2F4 /* Shape.swift */,
+				49E06F212AE828D80029E2F4 /* Coin.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				49E06F1B2AE81D300029E2F4 /* TileView.swift in Sources */,
 				49E06F1D2AE81D690029E2F4 /* MosaicView.swift in Sources */,
 				49E06F0C2AE81A8C0029E2F4 /* GenerativeArtApp.swift in Sources */,
+				49E06F222AE828D80029E2F4 /* Coin.swift in Sources */,
 				49E06F202AE826330029E2F4 /* Shape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

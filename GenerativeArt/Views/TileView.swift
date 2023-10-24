@@ -8,14 +8,15 @@
 import SwiftUI
 
 
+
 struct TileView: View {
     //MARK: Stored property
-    let flipOne = Bool.random()
+    let flipOne = Coin.flip()
     
     //MARK: Computing property
     var body: some View {
         ZStack {
-            if(flipOne){
+            if(flipOne == .heads){
                 TriangleTopRight()
                     //.fill(.black)
                     .stroke(.black)
