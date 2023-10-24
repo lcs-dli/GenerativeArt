@@ -74,16 +74,21 @@ struct TileView: View {
     var body: some View {
         VStack {
             TriangleTopRight()
-                //Make the shape be a square
+                //.fill(.black)
+                .stroke(.black)
                 .aspectRatio(1.0, contentMode: .fit)
+                
             TriangleBottomLeft()
-                //Make the shape be a square
+                //.fill(.black)
+                .stroke(.black)
                 .aspectRatio(1.0, contentMode: .fit)
             TriangleTopLeft()
-                //Make the shape be a square
+                //.fill(.black)
+                .stroke(.black)
                 .aspectRatio(1.0, contentMode: .fit)
             TriangleBottomLeft()
-                //Make the shape be a square
+                //.fill(.black)
+                .stroke(.black)
                 .aspectRatio(1.0, contentMode: .fit)
         }
         .padding()
