@@ -24,7 +24,7 @@ struct TileView: View {
     let flipTwo = Coin.flip()
     
     //Determine if the other triangle should be filled or blanck
-    
+    let flipThree = Coin.flip()
     //MARK: Computing property
     
     //Set the colors based on the coin flip
@@ -36,25 +36,30 @@ struct TileView: View {
         return flipForColor == .tails ? markerOne : markerTwo
     }
     
+    //Determine fill color for the remaining triangle
+    var remainingTriangleFillColor: Color{
+        return flipThree == .heads ? color2 : .clear
+    }
+    
     var body: some View {
         ZStack {
             if(flipOne == .heads){
                 TriangleTopRight()
-                    .fill(flipTwo == .heads ? color1 : .clear)
+                    .fill(flipTwo == .heads ? color1 : remainingTriangleFillColor)
                     .stroke(.black)
                     .aspectRatio(1.0, contentMode: .fit)
                     
                 TriangleBottomLeft()
-                    .fill(flipTwo == .tails ? color1: .clear)
+                    .fill(flipTwo == .tails ? color1: remainingTriangleFillColor)
                     .stroke(.black)
                     .aspectRatio(1.0, contentMode: .fit)
             }else{
                 TriangleTopLeft()
-                    .fill(flipTwo == .heads ? color1 : .clear)
+                    .fill(flipTwo == .heads ? color1 : remainingTriangleFillColor)
                     .stroke(.black)
                     .aspectRatio(1.0, contentMode: .fit)
                 TriangleBottomRight()
-                    .fill(flipTwo == .tails ? color1: .clear)
+                    .fill(flipTwo == .tails ? color1: remainingTriangleFillColor)
                     .stroke(.black)
                     .aspectRatio(1.0, contentMode: .fit)
             }
