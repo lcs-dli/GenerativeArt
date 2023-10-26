@@ -15,49 +15,46 @@ struct TileView: View {
     
     //choosing markers
     let markerOne = Color.red
-    let marketTwo = Color.blue
+    let markerTwo = Color.blue
     
     //Devide on colors
     let flipForColor = Coin.flip()
+    
+    //Determine which color will be filled color 1
+    let flipTwo = Coin.flip()
+    
+    //Determine if the other triangle should be filled or blanck
     
     //MARK: Computing property
     
     //Set the colors based on the coin flip
     var color1: Color{
-        if(flipForColor == .heads){
-            return markerOne
-        }else{
-            return marketTwo
-        }
+        return flipForColor == .heads ? markerOne : markerTwo
     }
     
     var color2: Color{
-        if(flipForColor == .tails){
-            return markerOne
-        }else{
-            return marketTwo
-        }
+        return flipForColor == .tails ? markerOne : markerTwo
     }
     
     var body: some View {
         ZStack {
             if(flipOne == .heads){
                 TriangleTopRight()
-                    .fill(color1)
+                    .fill(flipTwo == .heads ? color1 : .clear)
                     .stroke(.black)
                     .aspectRatio(1.0, contentMode: .fit)
                     
                 TriangleBottomLeft()
-                    //.fill(.black)
+                    .fill(flipTwo == .tails ? color1: .clear)
                     .stroke(.black)
                     .aspectRatio(1.0, contentMode: .fit)
             }else{
                 TriangleTopLeft()
-                    .fill(color2)
+                    .fill(flipTwo == .heads ? color1 : .clear)
                     .stroke(.black)
                     .aspectRatio(1.0, contentMode: .fit)
                 TriangleBottomRight()
-                    .fill(color1)
+                    .fill(flipTwo == .tails ? color1: .clear)
                     .stroke(.black)
                     .aspectRatio(1.0, contentMode: .fit)
             }
